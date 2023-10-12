@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  height: 700px;
+  background-color: grey;
+  display: grid;
+  grid-template-areas: "header header header" "lside main rside" "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 90px 1fr 150px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container header {
+  grid-area: header;
+  background-color: red;
+}
+.container header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.container header nav ul a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.container header nav ul a:hover {
+  background-color: black;
+  color: yellow;
+}
+.container .left-sidebar {
+  grid-area: lside;
+  background-color: green;
+}
+.container main {
+  grid-area: main;
+  background-color: yellow;
+}
+.container .right-sidebar {
+  grid-area: rside;
+  background-color: blue;
+}
+.container .columns {
+  grid-area: footer;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+.container .columns > div {
+  flex: 1;
+}
+.container .columns-footer-1 {
+  background-color: #ff8da1;
+}
+.container .columns-footer-2 {
+  background-color: #ff5a77;
+}
+.container .columns-footer-3 {
+  background-color: #f3002a;
+}
+.container .columns-footer-4 {
+  background-color: #c00022;
+}/*# sourceMappingURL=style.css.map */
